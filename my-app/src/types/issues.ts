@@ -7,3 +7,9 @@ export interface Issue {
         login: string;
     };
 }
+
+export interface PaginatedIssues {
+    issues: Issue[];
+    currentPage: number;
+    itemsPerPage: number;
+}
